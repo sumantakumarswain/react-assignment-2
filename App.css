@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500;1,600&family=Roboto:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500;1,600&family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  margin: 0px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#tab-section {
+  margin: 50px auto;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.tab-wrapper {
+  margin: 10px;
+  width: calc(33.33% - 20px);
+  height: 370px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 1px 3px 5px 1px black;
+  transition: width;
+}
+
+@media (max-width : 400px) {
+  .tab-wrapper {
+    width: 100%;
+  }
+}
+
+@media (min-width : 401px) {
+  .tab-wrapper {
+    width: calc(50% - 21px);
+  }
+}
+
+@media (min-width : 701px) {
+  .tab-wrapper {
+    width: calc(33.33% - 21px);
+  }
+}
+.tab-wrapper:hover{
+  border:5px solid  blue
+}
+.tab-image {
+  width: 100%;
+  height: 50%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.tab-title {
+  height: 30px;
+  padding: 5px;
+  font-size: 15px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.authorName {
+  margin: 0px;
+}
+
+.authorName b {
+  font-weight: 500px;
+  padding: 10px;
+  color: blue;
+}
+
+.description {
+  height: 50px;
+  padding: 5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  opacity: 0.4;
+
+}
+
+#header-wrapper {
+  margin: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  box-shadow: 0 2px 10px 2px gray;
+  position: fixed;
+  top: 0px
+}
+
+#upper-heading {
+  margin: 0px;
+  width: 100%;
+  background-color: blue;
+  box-sizing: border-box;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#first-para {
+  margin: 0px;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#Xmark {
+  position: relative;
+  left: 470px;
+  color: white;
+  font-size: 25px;
+
+}
+
+#header-main-wrapper {
+  margin: 0px;
+  width: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#header-left-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  margin: 0px;
+  color: blue;
+  font-weight: 800px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#logo-text {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  color: black;
+  position: relative;
+  top: -15px;
+}
+
+#explore-text {
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 100px;
+}
+
+#down-arrow {
+  position: relative;
+  top: 4px;
+  left: 6px;
+
+
+}
+
+#header-right-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#description-para {
+  font-family: 'Times New Roman', Times, serif;
+  opacity: 0.5
+}
+
+#main-website-btn {
+  font-family: 'Times New Roman', Times, serif;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: blue;
+  color: white;
+  border-style: none;
+  margin-left: 100px;
+
+}
+
+#latest-post-section {
+  width: 70%;
+  margin: 160px auto 0px;
+}
+
+#latest-para {
+  font-size: 25px;
+  font-weight: 400;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#latest-post-wrapper {
+  display: flex;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#latest-post-wrapper span {
+  font-size: 15px;
+  color: #0048ff
+}
+
+#latest-post-wrapper p {
+  width: 100%;
+  margin-left: 10px;
+
+}
+
+#button-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.post-button {
+  padding: 5px;
+  border-color: #0048ff;
+  border-radius: 13px;
+  margin: 10px 10px;
+  color: #0048ff;
+  white-space: nowrap;
+  opacity: 0.8;
+
+}
+.active-class {
+  background-color:#0048ff ;
+  color : white;
+  border-radius: 13px;
+  padding: 5px;
+  margin: 10px 10px;
+}
+.hover-effect{
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(100%,100%);
+ 
+}
+
